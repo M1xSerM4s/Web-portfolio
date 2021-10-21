@@ -1,0 +1,53 @@
+html{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    height: 100%;
+    font-family: Gilroy, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 24px;
+    max-width: 1343px;
+}
+
+.wrapper{
+    height: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; 
+}
+
+.main{
+    flex-grow: 1;
+}
+
+.title{
+    font-weight: 700;
+}
+
+.box-title{
+    font-size: 18px;
+    line-height: 21px;
+    padding: 9px 15px 10px;
+    display: inline-block;
+    color: #fff;
+}

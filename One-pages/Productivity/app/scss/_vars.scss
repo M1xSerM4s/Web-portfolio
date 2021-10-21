@@ -1,0 +1,14 @@
+$icon-hover: #6188FF;
+$partners-hover: #5982E7;
+
+@mixin Quicksand-list {
+    font-family: Quicksand;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #697CA6;
+    text-shadow: 0px 0px 5px #E6E6E6;
+}
+
+

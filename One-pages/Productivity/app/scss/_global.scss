@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+summary::marker {
+  display: none;
+}
+
+summary {
+  outline-style: none;
+  display: block;
+  cursor: pointer;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 1460px;
+}
+
+.container-pict {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.title {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3d4f9f;
+}
+
+.slider-dots {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  li {
+    position: relative;
+    height: 0;
+    width: 0;
+
+    &.slick-active {
+      button::after {
+        background-color: #5283ff;
+      }
+    }
+  }
+
+  li + li {
+    margin-left: 20px;
+    // 12px margin + 4px half dot
+  }
+
+  button {
+    height: 0;
+    width: 0;
+    border: none;
+    padding: 0;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      left: 0;
+      top: 0;
+      position: absolute;
+      transform: translate(-50%, -100%);
+      // -100% Y because if i need bottom:28px, than it is not 28px+dotHeight/2
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #d1d6e3;
+    }
+  }
+}
+
+.mouse-parallax-bg {
+  transform: translate(0);
+}
