@@ -1,5 +1,6 @@
-$(function(){
-    $(".header__btn").on('click',function(){
-        $(".menu__list").toggleClass("active");
-    });
-})
+$(function () {
+  $(".header__btn").on("click", function () {
+    $(".menu").toggleClass("active");
+    $(".header__top").toggleClass("active");
+  });
+});
