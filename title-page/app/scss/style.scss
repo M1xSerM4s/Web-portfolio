@@ -4,25 +4,20 @@
 @import "libs";
 @import "global";
 
-.header {
-  &__inner {
-    padding: 45px 0 100px;
-  }
-}
-
 .outer-links {
   display: flex;
   justify-content: center;
   align-items: center;
   &__item {
     & + & {
-      margin-left: 165px;
+      margin-left: 45px;
     }
   }
 }
 
 .title {
-  padding-bottom: 70px;
+  padding-top: 100px;
+  padding-bottom: 130px;
   text-align: center;
   font-weight: 700;
   font-size: 48px;
@@ -47,43 +42,52 @@
   }
 }
 
-.webcite {
+.website {
+  display: block;
+
   &__content {
-    position: relative;
+    // Переделать через clamp
+    transition: all 0.55s;
     width: 300px;
-    height: 400px;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    // border: 3px solid #000;
+    max-height: 400px;
+    overflow: hidden;
+    box-shadow: 0px 0px 54px 15px rgba(41, 95, 137, 0.2);
+    margin-bottom: 35px;
+    border-radius: 5px;
     &:hover {
       overflow-y: scroll;
+      box-shadow: 0px 0px 54px 15px rgba(41, 95, 137, 0.5);
+      border-radius: 0;
     }
     &::-webkit-scrollbar {
-      width: 10px;
+      width: 5px;
     }
     &::-webkit-scrollbar-track {
-      background: rgb(173, 168, 168);
+      background-color: #60b9ce;
     }
     &::-webkit-scrollbar-thumb {
-      background: #000;
+      background: #04819e;
     }
   }
-  &__illustration {
-    position: absolute;
-    width: 300px;
+  &__img {
+    width: inherit;
+    height: auto;
   }
   &__link {
+    // display: none;
     display: block;
+    width: fit-content;
+    margin: 0 auto;
     text-transform: uppercase;
     font-size: 16px;
     line-height: 1.25;
     font-weight: 500;
-    text-align: center;
-    padding-top: 20px;
+    letter-spacing: 1px;
   }
+}
 
-  &__img {
-    width: 100%;
-    height: auto;
+.footer {
+  &__inner {
+    padding-bottom: 40px;
   }
 }
