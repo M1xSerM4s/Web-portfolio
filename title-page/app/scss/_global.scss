@@ -37,3 +37,11 @@ a {
   margin: 0 auto;
   max-width: 1200px;
 }
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
