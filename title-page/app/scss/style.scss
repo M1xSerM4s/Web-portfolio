@@ -4,13 +4,9 @@
 @import "libs";
 @import "global";
 
-.wrapper {
-  // max-height: 100vh;
-  // overflow: hidden;
-}
-
 .title {
   padding-top: 4vh;
+  padding-bottom: 3vh;
   text-align: center;
   font-weight: 700;
   font-size: 48px;
@@ -167,7 +163,6 @@
     top: auto;
     bottom: 0px;
     opacity: 1;
-    background-color: #fff;
   }
   .arrow--left {
     transform: translate(calc(-75px - 64px), -50%) rotateY(0) scale(0.65);
